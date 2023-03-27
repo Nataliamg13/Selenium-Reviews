@@ -3,14 +3,14 @@ package seleniumBasics;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LaunchApplication {
+public class BrowserClose {
+
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
-
-
-
+        driver.get("https://www.facebook.com/");
+        //this is method to close the browser.
+        driver.close();
 
 
     }
